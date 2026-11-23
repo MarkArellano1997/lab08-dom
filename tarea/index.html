@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 640px;
+            margin: 30px auto;
+        }
+
+        form {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .completada {
+            text-decoration: line-through;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Lista de tareas</h1>
+
+    <form id="formTarea">
+        <input id="inputTarea" type="text" placeholder="Escribe una tarea">
+        <input id="inputPrioridad" type="text" placeholder="Prioridad (Alta / Media / Baja)">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Pendientes: <span id="pendientes">0</span></h2>
+
+    <button id="btnLimpiarHechas" type="button">Limpiar hechas</button>
+    <ul id="listaTareas"></ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
